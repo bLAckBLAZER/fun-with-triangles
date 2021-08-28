@@ -2,19 +2,74 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  width: 600px;
 }
 
 .angle-input {
   display: block;
-  margin: 0.5rem;
   padding: 0.5rem;
 }
 
 button {
   padding: 0.5rem;
+  margin: 1rem;
+  background-color: #34d399;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
 }
 
 #output {
   margin: 0.5rem;
   font-size: 1.5rem;
+}
+input {
+  display: block;
+  padding: 0.5rem;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
+input[type="radio"] {
+  display: inline;
+}
+
+.quiz-label {
+  display: inline;
+}
+
+label {
+  display: block;
+  margin: 1rem 1rem;
+  /* padding: 1rem; */
+}
+
+nav {
+  background-color: #374151;
+  margin: 0;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+li {
+  display: inline;
+}
+a {
+  text-decoration: none;
+  margin: 0rem 0.8rem;
+  color: white;
 }
