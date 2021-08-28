@@ -7,13 +7,20 @@ correctAnswers = ["90°", "right-angled"];
 function calculateScore() {
   let score = 0;
   let i = 0;
+  let count = 0;
   const formData = new FormData(quizForm);
   for (let value of formData.values()) {
+    count += 1;
     if (value === correctAnswers[i]) {
       score += 1;
     }
     i += 1;
   }
-  output.innerText = "Your score is: " + score;
+
+  if (count < correctAnswers.length) {
+    output.innerText = "Please answer every question";
+  } else {
+    output.innerText = `Your score is ${score}`;
+  }
 }
 btnSubmit.addEventListener("click", calculateScore);

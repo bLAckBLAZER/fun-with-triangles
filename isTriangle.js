@@ -5,7 +5,7 @@ const output = document.querySelector("#output");
 function checkIsTriangle() {
   var sumOfAngles = 0;
   for (let i = 0; i < angleInput.length; i++) {
-    sumOfAngles += parseInt(angleInput[i].value);
+    sumOfAngles += Number(angleInput[i].value);
   }
 
   if (sumOfAngles === 180) {
