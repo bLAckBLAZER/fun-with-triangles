@@ -73,3 +73,9 @@ a {
   margin: 0rem 0.8rem;
   color: white;
 }
+.question-container {
+  margin: 2.5rem 0rem;
+}
+.question-container p {
+  font-weight: bold;
+}
