@@ -9,12 +9,10 @@ function checkIsTriangle() {
   }
 
   if (sumOfAngles === 180) {
-    output.innerHTML = "It's a Triangle";
+    output.innerText = "It's a Triangle";
   } else {
-    output.innerHTML = "NOT a Triangle";
+    output.innerText = "NOT a Triangle";
   }
-
-  // console.log(sumOfAngles);
 }
 
 btnCheck.addEventListener("click", checkIsTriangle);
